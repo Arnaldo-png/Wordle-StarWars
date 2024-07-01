@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Imagenes/FNaruto.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño para cubrir todo el fondo */
+  }
+   
+  .neon-text {
+    color: #fff; /* Color del texto */
+    text-shadow: 0 0 10px #6f42c1, 0 0 20px #6f42c1, 0 0 30px #6f42c1, 0 0 40px #6f42c1, 0 0 70px #6f42c1, 0 0 80px #6f42c1, 0 0 100px #6f42c1, 0 0 150px #6f42c1; 
+    
+  }
+  
+
+
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+      padding: 20px; /* Espaciado interno para separar el texto del borde */
+      background: rgba(255, 255, 255, 0.226);
+      text-align: center; /* Centrar el texto horizontalmente */
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif; /* Tipo de fuente con backup sans-serif */
+      font-size: 4rem; /* Tamaño de fuente */
+      text-transform: uppercase; /* Transformar texto a mayúsculas */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+      text-shadow: 0 8px 16px rgb(0, 0, 0);
+      margin-bottom: 5px; /* Margen inferior para separar del contenido siguiente */
+      position: relative; /* Posición relativa para el uso de pseudoelementos */
+      overflow: hidden; /* Ocultar cualquier desbordamiento */
+    }
+  
+    h4{
+      text-align: center;
+      font-size: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+      margin-top: 1px;
+      color: white;
+      text-shadow: 0 8px 16px rgb(0, 0, 0);
+      
+  }
+
+h2 {
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900; 
+    font-size: 3rem;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+      color: #2d9da9;
+      align-self: end;
+      justify-self: center;
+      padding-bottom: 1rem;
+    }
+    
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 30px #2d9da9;
+      }
+      to {
+        text-shadow: 0 0 0px #34b3c1, 0 0 10px #4dbbc7;
+      }
+    }
+
+    h3 {
+      margin: 0;
+      grid-column: 1;
+      grid-row: 1;
+      z-index: 1;
+      font-family: 'Teko', sans-serif;
+      font-size: 3rem;
+      text-transform: uppercase;
+      animation: glow 2s ease-in-out infinite alternate;
+      text-align: center;
+        color: #c41f1f;
+        align-self: end;
+        justify-self: center;
+        padding-bottom: 1rem;
+        font-weight: 900; 
+      }
+
+     
+  #guess-input {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #cccccc;
+    text-align: center;
+  }
+     
+  #guess-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #0070f9, #008aff);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+     
+  button:active {
+      transform: scale(0.95);
+  }
+     
+  .letter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255); /* Color del texto */
+    border-radius: 20px; /* Añadir bordes redondeados*/
+}
+
+/* Colores específicos para diferentes letras */
+.letter.green {
+    background-color: green;
+}
+
+.letter.yellow {
+    background-color: yellow;
+    color: black; /* Cambiar el color del texto para mejor contraste */
+}
+
+.letter.gray {
+    background-color: gray;
+}
+     
+  .row{
+      display: flex;
+      justify-content: center; /* Centrar horizontalmente */
+      align-items: center; /* Centrar verticalmente */
+      margin-bottom: 10px;
+  }
+     
+  .input-area{
+      margin: 50px;
+  }
+
+
+/* Animaciones */
+@keyframes confetti-fall {
+  0% {
+      transform: translateY(-300px) rotateZ(0deg);
+  }
+  100% {
+      transform: translateY(600px) rotateZ(360deg);
+  }
+}
+
+.confetti {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 255, 42);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: confetti-fall 3s ease forwards;
+}
+  #reset-button {
+    background: linear-gradient(135deg, #006414, #009929);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+#reset-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+#reset-button:hover:not(:disabled) {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+#reset-button:active:not(:disabled) {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
