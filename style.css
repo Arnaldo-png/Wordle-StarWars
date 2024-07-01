@@ -1,51 +1,33 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('Imagenes/FNaruto.jpg'); /* Ruta a tu imagen de fondo */
+    background-image: url('Imagenes/FondoWordle.png'); /* Ruta a tu imagen de fondo */
     background-size: cover; /* Ajusta el tamaño para cubrir todo el fondo */
   }
-   
-  .neon-text {
-    color: #fff; /* Color del texto */
-    text-shadow: 0 0 10px #6f42c1, 0 0 20px #6f42c1, 0 0 30px #6f42c1, 0 0 40px #6f42c1, 0 0 70px #6f42c1, 0 0 80px #6f42c1, 0 0 100px #6f42c1, 0 0 150px #6f42c1; 
-    
-  }
-  
-
-
+     
   h1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
       padding: 20px; /* Espaciado interno para separar el texto del borde */
-      background: rgba(255, 255, 255, 0.226);
+      background: linear-gradient(to right, #2d9da9, #34b3c1); /* Gradiente lineal */
+      color: #fff; /* Color de texto blanco */
       text-align: center; /* Centrar el texto horizontalmente */
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif; /* Tipo de fuente con backup sans-serif */
-      font-size: 4rem; /* Tamaño de fuente */
+      font-family: 'Teko', sans-serif; /* Tipo de fuente con backup sans-serif */
+      font-size: 3rem; /* Tamaño de fuente */
       text-transform: uppercase; /* Transformar texto a mayúsculas */
       border-radius: 10px; /* Bordes redondeados */
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
       text-shadow: 0 8px 16px rgb(0, 0, 0);
-      margin-bottom: 5px; /* Margen inferior para separar del contenido siguiente */
+      margin-bottom: 30px; /* Margen inferior para separar del contenido siguiente */
       position: relative; /* Posición relativa para el uso de pseudoelementos */
       overflow: hidden; /* Ocultar cualquier desbordamiento */
     }
-  
-    h4{
-      text-align: center;
-      font-size: 15px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-      margin-top: 1px;
-      color: white;
-      text-shadow: 0 8px 16px rgb(0, 0, 0);
-      
-  }
 
 h2 {
     margin: 0;
     grid-column: 1;
     grid-row: 1;
     z-index: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900; 
+    font-family: 'Teko', sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
     animation: glow 2s ease-in-out infinite alternate;
@@ -79,7 +61,6 @@ h2 {
         align-self: end;
         justify-self: center;
         padding-bottom: 1rem;
-        font-weight: 900; 
       }
 
      
@@ -87,10 +68,9 @@ h2 {
     display: block;
     margin: 0 auto 20px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
     width: 250px;
-    border: 1px solid #cccccc;
-    text-align: center;
+    border: 1px solid #ccc;
   }
      
   #guess-button {
@@ -147,8 +127,10 @@ h2 {
   }
      
   .input-area{
-      margin: 50px;
+      margin: 30px;
   }
+
+
 
 
 /* Animaciones */
